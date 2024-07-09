@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    width: 190px;
+    background-color: black;
+}
+.logo_img{
+    height: 100%;
+}
+
+.main-header {
+    position: relative;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.h1, .h2 {
+    padding: 1em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    line-height: 2em;
+    padding: .2em 1em;
+    text-align: center;
+}
+
+.nosso-trabalho {
+    margin: 2em 0;
+    height: auto;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 600px;
+    height: 400px;
+    margin: 2em;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-box-back > p{
+    margin-top: 2em;
+  }
+  /* SECTION CONTACT */
+.contact{
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+.half-container-contact-left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(146, 146, 146);
+}
+.form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+/*     align-items: center;
+    justify-content: center; */
+}
+input{
+    width: 150px;  
+}
+label{
+    text-align: left;
+}
+.margin:not(:first-child){
+    margin-top: 20px;
+}
+
+.half-container-contact-right{
+height: 100%;
+width: 70%;
+background-color: black;
+}
+
+
+  footer{
+    margin-top: 200px;
+    height: 200px;
+    width: 100%;
+
+    background-color: rgb(255, 140, 0);
+  }
+  @media only screen and (max-width: 500px){
+.nav{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    align-self: center;
+}
+.nav-list{
+    
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.nav-list > li{
+    padding: 1em;
+    font-size: .7em;
+    text-align: center;
+
+}
+.nav-list >li:not(:last-child){
+    border-right: 1px solid black;
+}
+.paragraph{
+    padding: 0 1em;
+    text-align: justify;
+}
+  }
