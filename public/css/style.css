@@ -215,16 +215,19 @@ img {vertical-align: middle;}
   }
   /* SECTION CONTACT */
 .contact{
-    height: 600px;
-    width: 100%;
-    display: flex;
+  width: 80%;
+  height: 600px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .half-container-contact-left{
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(146, 146, 146);
+    background-color: rgba(146, 146, 146, 0.196);
 }
 .form{
     height: 100%;
@@ -246,10 +249,12 @@ label{
 
 .half-container-contact-right{
 height: 100%;
-width: 70%;
-background-color: black;
+width: 40%;
 }
-
+iframe{
+  width: 100%;
+  height: 100%;
+}
 
   footer{
     margin-top: 200px;
@@ -289,3 +294,5 @@ background-color: black;
     text-align: justify;
 }
   }
+
+  
